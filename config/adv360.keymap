@@ -89,7 +89,7 @@
         compatible = "zmk,combos";
 
         Sleep {
-            bindings = <&kp LS(LC(C_EJECT))>;
+            bindings = <&kp LG(LA(C_SLEEP))>;
             key-positions = <0 13>;
         };
     };
