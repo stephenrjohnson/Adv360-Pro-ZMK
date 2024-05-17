@@ -109,11 +109,11 @@
 
         sys {
             bindings = <
-&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5  &trans                                                &trans           &kp F6  &kp F7      &kp F8             &kp F9        &kp F10                                    &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans                                                &trans           &trans  &trans      &trans             &trans        &trans                                     &trans
-&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans        &trans      &trans  &trans      &trans           &trans  &trans      &trans             &trans        &trans                                     &bt BT_CLR
-&trans        &trans        &trans        &trans        &trans        &trans                        &trans      &trans                               &trans  &trans      &trans             &trans        &mt LS(NON_US_BACKSLASH) NON_US_BACKSLASH  &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &bt BT_SEL 0  &trans      &trans  &bl BL_TOG  &rgb_ug RGB_TOG          &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_NEXT                                 &bootloader
+&trans        &kp F1        &kp F2        &kp F3        &kp F4        &kp F5  &trans                                                &trans           &kp F6  &kp F7      &kp F8             &kp F9        &kp F10                     &trans
+&trans        &trans        &trans        &trans        &trans        &trans  &trans                                                &trans           &trans  &trans      &trans             &trans        &trans                      &trans
+&trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans        &trans      &trans  &trans      &trans           &trans  &trans      &trans             &trans        &trans                      &bt BT_CLR
+&trans        &trans        &trans        &trans        &trans        &trans                        &trans      &trans                               &trans  &trans      &trans             &trans        &mt LS(KP_SLASH) BACKSLASH  &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &trans  &bt BT_SEL 0  &trans      &trans  &bl BL_TOG  &rgb_ug RGB_TOG          &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_VOL_UP  &kp C_NEXT                  &bootloader
             >;
         };
 
