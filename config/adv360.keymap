@@ -19,30 +19,6 @@
             flavor = "tap-preferred";
             bindings = <&kp>, <&kp>;
         };
-
-        hm_l: homerow_mods_left {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_LEFT";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <7 8 9 10 11 12 13 21 22 23 24 25 26 27 38 39 40 41 42 43 44 45 54 55 56 57 58 59 68 69 70 71 72 73 74 75 37 52 53 65 66 67 68 35 36>;
-        };
-
-        hm_r: homerow_mods_right {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HOMEROW_MODS_RIGHT";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            quick_tap_ms = <175>;
-            flavor = "tap-preferred";
-            bindings = <&kp>, <&kp>;
-
-            hold-trigger-key-positions = <67 0 1 2 3 4 5 6 14 15 16 17 18 19 20 28 29 30 31 32 33 34 35 46 47 48 49 50 51 52 60 61 62 63 64 65 66 67 37 38 53 68 69 70>;
-        };
     };
 
     keymap {
@@ -52,7 +28,7 @@
             bindings = <
 &kp EQUAL  &kp N1         &kp N2            &kp N3            &kp N4     &kp N5                          &tog 1                                                                                   &mo 3                     &kp N6                           &kp N7   &kp N8             &kp N9             &kp N0                         &kp MINUS
 &kp TAB    &kp Q          &kp W             &kp E             &kp R      &kp T                           &mt LG(LEFT) LC(TAB)                                                                     &mt C_NEXT C_PLAY_PAUSE   &kp Y                            &kp U    &kp I              &kp O              &kp P                          &kp BSLH
-&kp ESC    &hm_l LCTRL A  &hm_l LEFT_ALT S  &hm_l LEFT_GUI D  &lt 5 F    &hm_l LC(LA(LG(LEFT_SHIFT))) G  &mt LG(RIGHT) LS(LC(TAB))  &kp LEFT_GUI  &kp LALT      &kp RIGHT_CONTROL  &kp RIGHT_GUI  &mt C_PREVIOUS RG(GRAVE)  &hm_r RA(RC(RG(RIGHT_SHIFT))) H  &lt 5 J  &hm_r RIGHT_GUI K  &hm_r RIGHT_ALT L  &hm_r RIGHT_CONTROL SEMICOLON  &kp SQT
+&kp ESC    &hm LCTRL A  &hm LEFT_ALT S  &hm LEFT_GUI D  &lt 5 F    &hm LC(LA(LG(LEFT_SHIFT))) G  &mt LG(RIGHT) LS(LC(TAB))  &kp LEFT_GUI  &kp LALT      &kp RIGHT_CONTROL  &kp RIGHT_GUI  &mt C_PREVIOUS RG(GRAVE)  &hm_r RA(RC(RG(RIGHT_SHIFT))) H  &lt 5 J  &hm_r RIGHT_GUI K  &hm_r RIGHT_ALT L  &hm_r RIGHT_CONTROL SEMICOLON  &kp SQT
 &kp LSHFT  &kp Z          &kp X             &kp C             &kp V      &kp B                                                                    &kp HOME      &kp PG_UP                                                   &kp N                            &kp M    &kp COMMA          &kp DOT            &kp FSLH                       &kp RSHFT
 &tog 4     &kp GRAVE      &kp CAPS          &kp LEFT          &kp RIGHT                                  &kp BSPC                   &kp DEL       &kp END       &kp PG_DN          &kp ENTER      &kp SPACE                                                  &kp UP   &kp DOWN           &kp LBKT           &kp RBKT                       &mo 2
             >;
